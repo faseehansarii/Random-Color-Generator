@@ -18,6 +18,7 @@
 h1{
     margin-top: 2rem;
     color: white;
+    transition: color 0.4s ease;
 }
 
 button{
@@ -29,16 +30,27 @@ button{
     background-color: transparent;
     color: white;
     font-size: 0.9em;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 12px currentColor;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+button:active{
+    transform: scale(0.97);
 }
 
 #box{
     height: 40vh;
     width: 80%;
-    border: 2px solid rgb(165, 150, 150);;
+    border: 2px solid rgb(165, 150, 150);
     border-radius: 10px;
     margin-top: 1rem;
-    transition: background 0.2s ease;
-    
+    transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 
 /* Previous colors */
@@ -58,8 +70,26 @@ p{
     justify-content: space-between;
 }
 
-.pallete{
+.palete{
     height: 100%;
     width: 19.5%;
-    
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.palete:hover{
+    transform: scaleY(1.08);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+/* Animation*/
+@keyframes popIn {
+    0%   { transform: scaleY(0.6); opacity: 0.3; }
+    60%  { transform: scaleY(1.1); }
+    100% { transform: scaleY(1);   opacity: 1; }
+}
+
+.palete.pop {
+    animation: popIn 0.3s ease forwards;
 }
