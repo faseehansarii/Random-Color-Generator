@@ -93,3 +93,18 @@ p{
 .palete.pop {
     animation: popIn 0.3s ease forwards;
 }
+
+@media(max-width:600px){
+    .container{
+    width: 80%;
+    height: 100%;
+}
+    #box{
+    height: 20vh;
+    width: 100%;
+    }
+    #previous{
+    height: 10vh;
+    width:  100%;
+    }
+}
