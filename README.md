@@ -1,9 +1,11 @@
 # Random Color Generator
 An interactive JavaScript project that generates random colors and keeps track of previously generated colors for quick reuse.
 
+
 ##  Live Demo
 
-[ https://random-color-generator.vercel.app](https://random-color-generator-faseehansariis-projects.vercel.app/)
+https://random-color-generator-wine-six.vercel.app/
+
 
 ##  Features
 
